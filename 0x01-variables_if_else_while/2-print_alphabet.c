@@ -4,16 +4,13 @@
  *
  * Return: always 0
  */
+
 int main(void)
 {
-	char alph;
+	char i;
 
-	alph = 'a';
-	while (alph <= 'z')
-	{
-		putchar (alph);
-		alph = alph + 1;
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar ('i');
 	putchar ('\n');
 	return (0);
-	}
 }
