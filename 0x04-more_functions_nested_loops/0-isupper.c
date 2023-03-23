@@ -2,17 +2,17 @@
 
 /**
  * _isupper - checks for uppercase
- * Return: 1 if uppercase 0 otherwise
- * @c: parameter value
+ * @c: user input
+ * Return: 1 if uppercase 0 else
  */
 
 int _isupper(int c)
 {
-	int i;
+	int c;
 
-	if (c >= 65 && c <= 90)
-		i = 1;
+	if (c >= 65 && c >= 90)
+		return (1);
 	else
-		i = 0;
-	return (1);
+		return (0);
 }
+
