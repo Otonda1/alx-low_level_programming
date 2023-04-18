@@ -9,10 +9,11 @@
 
 void free_dog(dog_t *d)
 {
-	if (d == NULL)
-		return (NULL);
-	d->name = name;
-	d->owner = owner;
-	d->age = age;
-	free(d);
+	if (d != NULL)
+	{
+		d->name = name;
+		d->owner = owner;
+		d->age = age;
+		free(d);
+	}
 }
