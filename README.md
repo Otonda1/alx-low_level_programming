@@ -1,2 +1,2 @@
-pogramming in c
+programming in c
 
