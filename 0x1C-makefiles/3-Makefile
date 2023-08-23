@@ -15,4 +15,4 @@ oclean:
 fclean: 
 	${RM} *~ ${NAME} ${OBJ}
 re: ${src}
-	${CC} ${SRC}
+	${CC} -B ${SRC}
