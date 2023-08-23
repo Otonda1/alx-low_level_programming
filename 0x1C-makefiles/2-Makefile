@@ -1,17 +1,8 @@
+# Creating the first useful makefile
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
-
-.PHONY: all ${OBJ}
-
-
+OBJ = $(SRC:.c=.o)
+NAME = school
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o school
-
-main.o: main.c
-	$(CC) -c main.c -o main.o
-
-school.o: school.c
-	$(CC) -c school.c -o school.o
-
+	${CC} ${OBJ} -o ${NAME}
